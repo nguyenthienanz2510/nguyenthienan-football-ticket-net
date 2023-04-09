@@ -1,0 +1,28 @@
+.breadcrumb {
+  background: transparent;
+  margin-top: 6px;
+  .breadcrumb__list {
+    display: flex;
+    list-style: none;
+    gap: 4px;
+    font-size: 11px;
+    padding-left: 16px;
+    .breadcrumb__item {
+      a {
+        color: #646464;
+        text-decoration: underline;
+        text-transform: capitalize;
+        &:hover {
+          color: $color-primary;
+        }
+      }
+      &.breadcrumb__item--active {
+        a {
+          color: #434343;
+          text-decoration: none;
+          cursor: text;
+        }
+      }
+    }
+  }
+}

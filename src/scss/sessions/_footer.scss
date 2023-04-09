@@ -1,0 +1,29 @@
+.footer {
+  background: #343434;
+  font-size: 10px;
+  .footer-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 28px;
+    .footer-copyright {
+      color: #6d6d6d;
+    }
+    .footer-nav {
+      .footer-nav__list {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        color: #6d6d6d;
+        a {
+          text-decoration: none;
+          color: #6d6d6d;
+          transition: all 0.3s;
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}

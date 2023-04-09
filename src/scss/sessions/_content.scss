@@ -1,0 +1,17 @@
+.content {
+    background: transparent;
+    margin-top: 10px;
+    color: #292929;
+    .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        .content-aside {
+            width: 210px;
+            flex-shrink: 0;
+        }
+        .content-body {
+            flex: 1;
+        }
+    }
+    
+}

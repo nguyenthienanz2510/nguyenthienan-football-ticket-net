@@ -35,3 +35,9 @@ html {
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
+
+a {
+  &:hover {
+    color: $color-primary;
+  }
+}
