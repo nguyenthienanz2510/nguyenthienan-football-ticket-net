@@ -26,7 +26,7 @@
 <meta name="twitter:title" content="title" />
 <meta name="twitter:image" content="meta_image" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href="./css/styles.css?v=1681044692549" rel="stylesheet"></head>
+<link href="./css/styles.css?v=1681045372056" rel="stylesheet"></head>
 
 <body>
   <div id="contact">
@@ -171,12 +171,12 @@
 </header>
 
 <script>
-  document.querySelector('#touchBar').addEventListener('click', function () {
-    document.querySelector('.nav-mobile').classList.add('nav-mobile--active')
-  })
-  document.querySelector('#closeNavMobile').addEventListener('click', function () {
-    document.querySelector('.nav-mobile').classList.remove('nav-mobile--active')
-  })
+  // document.querySelector('#touchBar').addEventListener('click', function () {
+  //   document.querySelector('.nav-mobile').classList.add('nav-mobile--active')
+  // })
+  // document.querySelector('#closeNavMobile').addEventListener('click', function () {
+  //   document.querySelector('.nav-mobile').classList.remove('nav-mobile--active')
+  // })
 </script>
     <!-- end header -->
 
@@ -833,48 +833,8 @@
     <!-- end footer -->
 
   </div>
-<script type="text/javascript" src="./js/bundle.js?v=1681044692548"></script></body>
+<script type="text/javascript" src="./js/bundle.js?v=1681045372056"></script></body>
 
-<script>
-    // trustpilot slider
-    let slideIndexTrustpilot = 1;
-    showDivsTrustpilot(slideIndexTrustpilot);
 
-    function plusDivsTrustpilot(n) {
-        showDivsTrustpilot(slideIndexTrustpilot += n);
-        console.log("Slider")
-    }
-
-    function showDivsTrustpilot(n) {
-        var i;
-        var x = document.getElementsByClassName("trustpilot__content-item");
-        if (n > x.length) { slideIndexTrustpilot = 1 }
-        if (n < 1) { slideIndexTrustpilot = x.length }
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndexTrustpilot - 1].style.display = "block";
-    }
-
-    //feefo slider 
-    let slideIndexFeefo = 1;
-    showDivsFeefo(slideIndexFeefo);
-
-    function plusDivsFeefo(n) {
-        showDivsFeefo(slideIndexFeefo += n);
-        console.log("Slider")
-    }
-
-    function showDivsFeefo(n) {
-        var i;
-        var x = document.getElementsByClassName("feefo__content-item");
-        if (n > x.length) { slideIndexFeefo = 1 }
-        if (n < 1) { slideIndexFeefo = x.length }
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndexFeefo - 1].style.display = "block";
-    }
-</script>
 
 </html>

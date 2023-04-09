@@ -1,2 +1,2 @@
-// require('./module/contact-us')
+require('./module/contact-us')
 
