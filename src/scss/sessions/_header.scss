@@ -1,0 +1,12 @@
+.header {
+    background: #343434;
+    height: 32px;
+    display: flex;
+    .header-nav {
+        .header-nav__list {
+            display: flex;
+            gap: 20px;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.container {
+  max-width: 930px;
+  width: 100%;
+  margin: 0 auto;
+  @include breakpoint-down('desktop') {
+    padding: 0 24px;
+  }
+  @include breakpoint-down('phone') {
+    padding: 0 16px;
+  }
+}

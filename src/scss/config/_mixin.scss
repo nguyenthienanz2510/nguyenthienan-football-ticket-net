@@ -1,0 +1,102 @@
+$breakpoints: (
+  'xlargedesktop': (
+    max-width: 1919.98px,
+  ),
+  'largedesktop': (
+    max-width: 1535.98px,
+  ),
+  'mediumdesktop': (
+    max-width: 1439.98px,
+  ),
+  'laptop': (
+    max-width: 1366.98px,
+  ),
+  'small-laptop': (
+    max-width: 1359.98px,
+  ),
+  'desktop': (
+    max-width: 1199.98px,
+  ),
+  'smalldesktop': (
+    max-width: 1032.98px,
+  ),
+  'tablet': (
+    max-width: 991.98px,
+  ),
+  'phone': (
+    max-width: 767.98px,
+  ),
+  'smallphone': (
+    max-width: 575.98px,
+  ),
+  'mediumphone': (
+    max-width: 413.98px,
+  ),
+  'xsmallphone': (
+    max-width: 374.98px,
+  ),
+);
+
+@mixin breakpoint-down($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(type-of($raw-query) == 'string', unquote($raw-query), inspect($raw-query));
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. ' + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+$breakpoints-up: (
+  'xlargedesktop': (
+    min-width: 1920px,
+  ),
+  'largedesktop': (
+    min-width: 1536px,
+  ),
+  'mediumdesktop': (
+    min-width: 1440px,
+  ),
+  'laptop': (
+    min-width: 1366px,
+  ),
+  'small-laptop': (
+    min-width: 1359px,
+  ),
+  'desktop': (
+    min-width: 1200px,
+  ),
+  'smalldesktop': (
+    min-width: 1033px,
+  ),
+  'tablet': (
+    min-width: 992px,
+  ),
+  'phone': (
+    min-width: 768px,
+  ),
+  'smallphone': (
+    min-width: 576px,
+  ),
+  'xsmallphone': (
+    min-width: 375px,
+  ),
+);
+
+@mixin breakpoint-up($breakpoint) {
+  $raw-query: map-get($breakpoints-up, $breakpoint);
+
+  @if $raw-query {
+    $query: if(type-of($raw-query) == 'string', unquote($raw-query), inspect($raw-query));
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. ' + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}

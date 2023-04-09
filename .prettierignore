@@ -1,0 +1,9 @@
+.github/
+.vscode/
+yarn.lock
+package.json
+node_modules/
+webpack/
+.babelrc
+page/
+src/*/assets/
