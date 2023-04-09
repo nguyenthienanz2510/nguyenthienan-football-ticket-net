@@ -26,7 +26,7 @@
 <meta name="twitter:title" content="title" />
 <meta name="twitter:image" content="meta_image" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href="./css/styles.css?v=1681040628021" rel="stylesheet"></head>
+<link href="./css/styles.css?v=1681044692549" rel="stylesheet"></head>
 
 <body>
   <div id="contact">
@@ -35,15 +35,43 @@
     <header class="header">
 
   <div class="secondary-bar">
-    <div class="secondary-bar-wrapper container">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li><a href="#" target="_self" title="Acerca de nosotros">Acerca de nosotros</a></li>
-          <li><a href="#" target="_self" title="Contáctanos">Contáctanos</a></li>
-          <li><a href="#" target="_self" title="Tarjeta de regalo">Tarjeta de regalo</a></li>
-          <li><a href="#" target="_self" title="Preguntas más frecuentes">Preguntas más frecuentes</a></li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="secondary-bar-wrapper ">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#" target="_self" title="Acerca de nosotros">Acerca de nosotros</a></li>
+            <li><a href="#" target="_self" title="Contáctanos">Contáctanos</a></li>
+            <li><a href="#" target="_self" title="Tarjeta de regalo">Tarjeta de regalo</a></li>
+            <li><a href="#" target="_self" title="Preguntas más frecuentes">Preguntas más frecuentes</a></li>
+          </ul>
+        </nav>
+        <div class="secondary-bar__right">
+          <div class="secondary-bar__search">
+            <input type="text">
+            <button class="btn-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <ul class="secondary-bar__socials">
+            <li class="secondary-bar__socials-item">
+              <a href="#" title="facebook" target="_blank">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li class="secondary-bar__socials-item">
+              <a href="#" title="google-plus" target="_blank">
+                <i class="fa-brands fa-square-google-plus"></i>
+              </a>
+            </li>
+          </ul>
+          <button class="btn-login">
+            Kirjaudu sisään
+          </button>
+          <div class="seondary-bar__lang">
+            <button class="active-lang">Swedish <i class="fa-solid fa-caret-down"></i></button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -54,6 +82,9 @@
           <a href="#">
             <img src="./images/FTN-logo.png" alt="FTN-logo" title="FTN-logo">
           </a>
+        </div>
+        <div class="touch-bar" id="touchBar">
+          <i class="fa-solid fa-bars"></i>
         </div>
         <nav class="nav">
           <ul class="nav__list">
@@ -71,14 +102,82 @@
 
   <div class="description ">
     <div class="container">
-      <p>Football Ticket Net is one of the leading secondary ticket marketplace websites that provides tickets to sold out
-        football events across the world. Please note that tickets that are sold on this website may be listed at a higher
+      <p>Football Ticket Net is one of the leading secondary ticket marketplace websites that provides tickets to sold
+        out
+        football events across the world. Please note that tickets that are sold on this website may be listed at a
+        higher
         or lower price than the original ticket face value.</p>
-  
+
+    </div>
+  </div>
+
+  <div class="nav-mobile">
+    <div class="nav-mobile__close">
+      <div class="close-nav-mobile" id="closeNavMobile">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+    <div class="nav-mobile__primary-bar">
+      <ul class="nav-mobile__primary-bar-list">
+        <li><a href="#" target="_self" title="Home">Home</a></li>
+        <li><a href="#" target="_self" title="Teams">Teams</a></li>
+        <li><a href="#" target="_self" title="Tournaments">Tournaments</a></li>
+        <li><a href="#" target="_self" title="International">International</a></li>
+        <li><a href="#" target="_self" title="Stadium Tours">Stadium Tours</a></li>
+        <li><a href="#" target="_self" title="Most Popular">Most Popular</a></li>
+      </ul>
+    </div>
+    <div class="nav-mobile__secondary-bar">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#" target="_self" title="Acerca de nosotros">Acerca de nosotros</a></li>
+          <li><a href="#" target="_self" title="Contáctanos">Contáctanos</a></li>
+          <li><a href="#" target="_self" title="Tarjeta de regalo">Tarjeta de regalo</a></li>
+          <li><a href="#" target="_self" title="Preguntas más frecuentes">Preguntas más frecuentes</a></li>
+        </ul>
+      </nav>
+      <div class="secondary-bar__right">
+        <div class="secondary-bar__search">
+          <input type="text">
+          <button class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="nav-mobile__bottom">
+          <ul class="secondary-bar__socials">
+            <li class="secondary-bar__socials-item">
+              <a href="#" title="facebook" target="_blank">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li class="secondary-bar__socials-item">
+              <a href="#" title="google-plus" target="_blank">
+                <i class="fa-brands fa-square-google-plus"></i>
+              </a>
+            </li>
+          </ul>
+          <button class="btn-login">
+            Kirjaudu sisään
+          </button>
+          <div class="seondary-bar__lang">
+            <button class="active-lang">Swedish <i class="fa-solid fa-caret-down"></i></button>
+          </div>
+        </div>
+        
+      </div>
     </div>
   </div>
 
 </header>
+
+<script>
+  document.querySelector('#touchBar').addEventListener('click', function () {
+    document.querySelector('.nav-mobile').classList.add('nav-mobile--active')
+  })
+  document.querySelector('#closeNavMobile').addEventListener('click', function () {
+    document.querySelector('.nav-mobile').classList.remove('nav-mobile--active')
+  })
+</script>
     <!-- end header -->
 
     <!-- content -->
@@ -734,7 +833,7 @@
     <!-- end footer -->
 
   </div>
-<script type="text/javascript" src="./js/bundle.js?v=1681040628021"></script></body>
+<script type="text/javascript" src="./js/bundle.js?v=1681044692548"></script></body>
 
 <script>
     // trustpilot slider
