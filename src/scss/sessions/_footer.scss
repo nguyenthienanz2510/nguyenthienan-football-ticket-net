@@ -18,6 +18,8 @@
         gap: 12px;
         color: #6d6d6d;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         a {
           text-decoration: none;
           color: #6d6d6d;
@@ -27,6 +29,12 @@
           }
         }
       }
+    }
+  }
+  @include breakpoint-down('tablet') {
+    .footer-wraper {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

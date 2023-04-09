@@ -116,7 +116,31 @@
             justify-content: center;
           }
           .trustpilot__content {
+            position: relative;
             margin-top: 10px;
+            .trustpilot__content-item {
+              width: 100%;
+              padding: 0 24px;
+              font-size: 9px;
+            }
+            button {
+              background: transparent;
+              border: none;
+              position: absolute;
+              cursor: pointer;
+              font-size: 16px;
+              color: #c5c5c5;
+              &.btn-prev {
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+              }
+              &.btn-next {
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+              }
+            }
           }
         }
         .trustpilot__bottom {
@@ -151,7 +175,31 @@
             justify-content: center;
           }
           .feefo__content {
+            position: relative;
             margin-top: 10px;
+            .feefo__content-item {
+              width: 100%;
+              padding: 0 24px;
+              font-size: 9px;
+            }
+            button {
+              background: transparent;
+              border: none;
+              position: absolute;
+              cursor: pointer;
+              font-size: 16px;
+              color: #c5c5c5;
+              &.btn-prev {
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+              }
+              &.btn-next {
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+              }
+            }
           }
         }
         .feefo__bottom {
@@ -231,6 +279,7 @@
             h3 {
               font-size: 12px;
               font-weight: 400;
+              margin-bottom: 4px;
             }
             .content-body-email__form-wrapper {
               display: grid;
@@ -268,8 +317,6 @@
                   margin-top: 8px;
                   img {
                     display: block;
-                    width: 100%;
-                    height: auto;
                   }
                 }
               }
@@ -287,7 +334,7 @@
                   }
                 }
                 .content-body-email-submit {
-                  margin-top: 28px;
+                  margin-top: 8px;
                 }
               }
             }
@@ -305,12 +352,12 @@
             justify-content: flex-start;
             gap: 10px;
             padding: 0 12px;
-            height: 28px;
             .image {
               flex-shrink: 0;
             }
             .title {
               font-size: 14px;
+              line-height: 28px;
               text-transform: capitalize;
             }
           }
@@ -431,6 +478,55 @@
             }
           }
         }
+      }
+    }
+  }
+
+  @include breakpoint-down('tablet') {
+    .content-wrapper {
+      .content-body {
+        .content-body-email {
+          .content-body-email-wrapper {
+            .content-body-email__form {
+              .content-body-email__form-wrapper {
+                grid-template-columns: 1fr;
+                gap: 8px;
+              }
+            }
+          }
+        }
+
+        .content-body-call {
+          .content-body-call-wrapper {
+            .content-body-call__list {
+              ul {
+                columns: 2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include breakpoint-down('phone') {
+    .content-wrapper {
+      gap: 12px;
+      flex-direction: column-reverse;
+      .content-body {
+        .content-body-call {
+          .content-body-call-wrapper {
+            .content-body-call__list {
+              ul {
+                columns: 1;
+              }
+            }
+          }
+        }
+      }
+
+      .content-aside {
+        width: 100%;
       }
     }
   }

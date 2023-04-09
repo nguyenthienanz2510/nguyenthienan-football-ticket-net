@@ -59,4 +59,18 @@
     font-size: 11px;
     margin-top: 4px;
   }
+  @include breakpoint-down('tablet') {
+    .secondary-bar {
+      display: none;
+    }
+    .primary-bar {
+      .primary-bar-wrapper {
+        .nav {
+          display: none;
+        }
+      }
+    }
+  }
+  @include breakpoint-down('phone') {
+  }
 }
