@@ -1,17 +1,180 @@
 .content {
-    background: transparent;
-    margin-top: 10px;
-    color: #292929;
-    .content-wrapper {
-        display: flex;
-        flex-direction: row;
-        .content-aside {
-            width: 210px;
+  background: transparent;
+  margin-top: 10px;
+  color: #292929;
+  .content-wrapper {
+    display: flex;
+    gap: 18px;
+    flex-direction: row;
+    .content-aside {
+      width: 210px;
+      flex-shrink: 0;
+
+      .advantages {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        background-color: white;
+        .advantages-wrapper {
+          .advantages__title {
+            font-size: 13px;
+            line-height: 19px;
+            padding: 10px;
+            text-transform: uppercase;
+            background-color: #efefef;
+            text-align: center;
+            border: 1px solid #d7d7d7;
+          }
+          .advantages__list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid #d7d7d7;
+            border-top: 0;
+            .advantages__item {
+              width: calc(50% - 0.5px);
+              padding: 10px 4px;
+              font-size: 10px;
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              border-bottom: 1px solid #d7d7d7;
+              gap: 8px;
+              &:nth-child(odd) {
+                border-right: 1px solid #d7d7d7;
+              }
+              .image {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+              }
+              .name {
+                text-align: center;
+              }
+            }
+          }
+          .advantages__button {
+            padding: 12px;
+            border: 1px solid #d7d7d7;
+            border-top: 0;
+            .btn-learnmore {
+              font-size: 17px;
+              color: #f5f5f5;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 36px;
+              background-image: linear-gradient(90deg, #48853b, #7bb42e);
+              border-radius: 3px;
+              border: none;
+              cursor: pointer;
+              transition: all 0.3s;
+              &:hover {
+                transition: all 0.3s;
+                opacity: 0.9;
+              }
+            }
+          }
+        }
+      }
+
+      .asta {
+        background-color: white;
+        margin-top: 20px;
+        padding: 12px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border: 1px solid #d7d7d7;
+        .asta-wrapper {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          .asta__image {
             flex-shrink: 0;
-        }
-        .content-body {
+          }
+          .asta__content {
             flex: 1;
+            span {
+              font-size: 10px;
+              text-transform: uppercase;
+            }
+          }
         }
+      }
+
+      .trustpilot {
+        background-color: white;
+        margin-top: 20px;
+        font-size: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border: 1px solid #d7d7d7;
+        .trustpilot-wrapper {
+          padding: 12px;
+          .trustpilot__logo {
+            display: flex;
+            justify-content: center;
+          }
+          .trustpilot__content {
+            margin-top: 10px;
+          }
+        }
+        .trustpilot__bottom {
+          background: #efefef;
+          display: flex;
+          justify-content: flex-end;
+          position: relative;
+          .trustpilot__reviews {
+            padding-right: 12px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+          }
+          .btn-secondary {
+            position: absolute;
+            top: 0;
+            left: 16px;
+          }
+        }
+      }
+
+      .feefo {
+        background-color: white;
+        margin: 20px 0;
+        font-size: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border: 1px solid #d7d7d7;
+        .feefo-wrapper {
+          padding: 12px;
+          .feefo__logo {
+            display: flex;
+            justify-content: center;
+          }
+          .feefo__content {
+            margin-top: 10px;
+          }
+        }
+        .feefo__bottom {
+          background: #efefef;
+          display: flex;
+          justify-content: flex-end;
+          position: relative;
+          .feefo__reviews {
+            padding-right: 12px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+          }
+          .btn-secondary {
+            position: absolute;
+            top: 0;
+            left: 16px;
+            background-image: linear-gradient(90deg, #f2cd0d, #f8e90e);
+          }
+        }
+      }
     }
-    
+    .content-body {
+      flex: 1;
+    }
+  }
 }
